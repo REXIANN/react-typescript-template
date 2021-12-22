@@ -46,3 +46,9 @@ yarn plugin typescript를 설치. 이 플러그인은 `@types/`가 포함되지 
 ```shell
 yarn plugin import typescript
 ```
+
+babel 종속성을 만족시키기 위해 babel-preset-react-app 설치해야함
+또한 babelrc에 preset추가, yarnrc.yml에 babel-preset관련 디펜던시 추가
+```shell
+yarn add -D babel-preset-react-app
+```
