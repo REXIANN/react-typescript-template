@@ -16,7 +16,8 @@ const project = {
   Test: 'testing-library/react',
   UI: 'storybook',
   Build: 'Docker',
-  Commands: 'Task'
+  Commands: 'Task',
+  packageManager: 'Yarn Berry'
 }
 ```
 
@@ -27,3 +28,16 @@ const project = {
 4. 위의 세 개 의 동작 확인
 5. task 명령어로 통일
     *yarn berry(yarn2)로 변경이 가능할지 알아보기
+
+
+## yarn berry
+```bash
+yarn set version berry
+yarn --version
+# v.3.x.x
+```
+
+* `.npmrc`파일을 `.yarnrc.yml`로 수정
+* `package.lock.json` 파일 제거
+* `node_modules` 폴더 제거
+* `package.json`에 있는 `eslintConfig`는 `.eslintrc.js` 폴더로 이동
