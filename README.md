@@ -41,3 +41,8 @@ yarn --version
 * `package.lock.json` 파일 제거
 * `node_modules` 폴더 제거
 * `package.json`에 있는 `eslintConfig`는 `.eslintrc.js` 폴더로 이동
+
+yarn plugin typescript를 설치. 이 플러그인은 `@types/`가 포함되지 않은 패키지를 가져올 경우 종속성에 자동으로 해당 패키지의 타입 패키지를 설치해준다.
+```shell
+yarn plugin import typescript
+```
